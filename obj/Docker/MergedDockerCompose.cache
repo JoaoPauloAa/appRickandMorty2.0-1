@@ -1,0 +1,16 @@
+name: dockercompose11100009661689552098
+services:
+  apirickandmorty2.0:
+    build:
+      context: C:\Users\User\Desktop\api\ApiRickandMorty2.0\ApiRickandMorty2.0
+      dockerfile: Dockerfile
+    image: apirickandmorty20
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose11100009661689552098_default
